@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=$1 python run_classifier.py --dataset 'miniImageNet' --mode 'train_test' --tasks_per_batch 8 --test_iterations 600 --way 5 --shot 5 --iterations 100000 --print_freq 200 --beta 0.0001 --top_k 10 --memory_samples 150 --num_samples 150 --learning_rate 0.0001 --ori_scale 0.3
